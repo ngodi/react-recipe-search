@@ -9,7 +9,7 @@ export default class RecipeDetails extends Component {
             url:`https://www.food2fork.com/api/get?key=2842cff6eb43c04282eb230b3697a0b9&rId=${this.props.id}`
         }
     }
-
+/*
  async  componentDidMount(){
         try{
             const data = await fetch(this.state.url);
@@ -22,6 +22,7 @@ export default class RecipeDetails extends Component {
             console.log(error)
           }
       }
+      */
 
   render() {
       const {image_url,publisher,publisher_url,source_url,title,ingredients} = this.state.recipe;
