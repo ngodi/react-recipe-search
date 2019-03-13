@@ -2,11 +2,7 @@ import React, { Component } from 'react'
 
 export default class Recipe extends Component {
   render() {
-<<<<<<< HEAD
-  const  {image_url,title,source_url,publisher}  = this.props.recipe;
-=======
   const  {image_url,title,source_url,publisher,recipe_id}  = this.props.recipe;
->>>>>>> 571f808b118c19298791a01ff114b253061b6a71
   const {handleDetails} = this.props;
     return (
      

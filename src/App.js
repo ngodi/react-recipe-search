@@ -9,19 +9,12 @@ class App extends Component {
   state ={
     recipes:recipes,
     url:"https://www.food2fork.com/api/search?key=2842cff6eb43c04282eb230b3697a0b9",
-<<<<<<< HEAD
     details_id: 35382,
     pageIndex:1,
     search:'',
     query:'&q=',
    base_url:"https://www.food2fork.com/api/search?key=2842cff6eb43c04282eb230b3697a0b9",
    error:''
-
-
-=======
-    details_id: 35384,
-    pageIndex:0
->>>>>>> 571f808b118c19298791a01ff114b253061b6a71
   }
 
  async getRecipes(){
@@ -57,15 +50,12 @@ displayPage = (index) =>{
   switch(index){
     default:
     case 1:
-<<<<<<< HEAD
     return(<RecipeList recipes={this.state.recipes} handleDetails={this.handleDetails} value={this.state.search}
                               handleChange={this.handleChange} handleSubmit={this.handleSubmit} error={this.state.error}
                         />)
   
-=======
     return(<RecipeList recipes={this.state.recipes} handleDetails={this.handleDetails}/>)
     break;
->>>>>>> 571f808b118c19298791a01ff114b253061b6a71
     case 0:
    return (<RecipeDetails id={this.state.details_id} handleIndex={this.handleIndex}/>)
   }
@@ -83,7 +73,6 @@ handleDetails = (index, id) =>{
     details_id:id
   })
 }
-<<<<<<< HEAD
 
 handleChange = (e)=>{
   this.setState({
@@ -103,8 +92,6 @@ this.setState(() =>{
   }
 })
 }
-=======
->>>>>>> 571f808b118c19298791a01ff114b253061b6a71
   render() {
    
     return (
